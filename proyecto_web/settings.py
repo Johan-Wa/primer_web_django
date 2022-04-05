@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'autenticacion',
     'proyecto_web_app',
     'servicios_app',
     'blog_app',
