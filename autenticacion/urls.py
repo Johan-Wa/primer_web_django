@@ -1,7 +1,9 @@
 from django.urls import path
-from . import views
+from .views import VRegistro, cerrar_sesion, Vlogin
 
 
 urlpatterns = [
-    path('', views.autenticacion, name='autenticacion'),
+    path('', VRegistro.as_view(), name='autenticacion'),
+    path('cerrar', cerrar_sesion, name='cerrar_sesion'),
+    path('logear',Vlogin.as_view(), name='logear')
 ]
